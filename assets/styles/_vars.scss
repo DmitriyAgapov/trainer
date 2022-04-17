@@ -1,0 +1,42 @@
+:root {
+  --font-main: Inter, sans-serif;
+  --font-headings: Russo One, sans-serif;
+  --color-text: #2B302B;
+  --color-text-button: #0E0E0E;
+  --color-primary: #A3DA79;
+  --color-text-gray: #909090;
+  --color-background: #C9EDB9;
+  --color-border: #DCDCDC;
+  --color-footer: #141515;
+  --color-bottom__color_3: #020202;
+
+  /* Text-size styles */
+  /* base size: text__-main (16px) */
+  --h1: 8.625rem;
+  --h2: 3rem;
+  --h3: 1.5rem;
+  --text__-main__-plus: 1.25rem;
+  --text__-main: 1rem;
+  --text__main__minus: 0.875rem;
+  --header__-link: 1.125rem;
+  --subheading: 2rem;
+  --discription: 1.5rem;
+  --discription-2: 0.875rem;
+  --text__botton: 1rem;
+  --text__-botton-2: 1.5rem;
+  --numbers: 5rem;
+  --list: 1rem;
+  --list-14px: 0.75rem;
+  --text__botton-3: 1.25rem;
+
+  /* Effect styles */
+  --shadow-1:  0px 0px 10px rgba(189, 255, 158, 0.14), 0px 0px 20px rgba(189, 255, 158, 0.12), 0px 0px 36px rgba(189, 255, 158, 0.17);
+  --shadow-2:  0px 0px 10px rgba(29, 32, 28, 0.14), 0px 0px 20px rgba(29, 32, 28, 0.12), 0px 0px 36px rgba(34, 40, 37, 0.17);
+  --shadow-3:  0px 0px 10px rgba(29, 32, 28, 0.06), 0px 0px 20px rgba(29, 32, 28, 0.07), 0px 0px 36px rgba(34, 40, 37, 0.07);
+
+  /*Grid*/
+  --grid-columns: repeat(12, 1fr);
+  --grid-gap: 3.75rem;
+  --grid-section-row: minmax(10vh, auto) 1fr minmax(10vh, auto);
+
+}

@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  position: relative;
+  //overflow-x: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  scroll-behavior: smooth;
+  //font-size: calc(60% + 0.8vmin);
+  &.has-cursor,
+  &.has-cursor * {
+    // stylelint-disable-next-line
+    cursor: none !important;
+  }
+
+  &.is-lock-scroll,
+  &.is-lock-scroll body {
+    overflow: hidden;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-decoration-skip: auto;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--color-text);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+  margin-right: 0 !important;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-headings);
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  font-size: 4rem;
+  margin: 0 0 2rem;
+
+  @media screen and (max-width: 767px){
+    font-size: 20vw;
+  }
+}
+
+h2 {
+  line-height: 1.3;
+  font-size: 3rem;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+  @media screen and  (max-width: 767px){
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a,
+button {
+  outline: none;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  &:hover {
+    color: var(--color-text-button);
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+svg {
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+figure,
+picture {
+  display: inline-block;
+  margin: 0;
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  user-select: none;
+}
+
+img[draggable="false"] {
+  pointer-events: none;
+  // stylelint-disable-next-line
+  -webkit-user-drag: none;
+}
+
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+li {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+video {
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
