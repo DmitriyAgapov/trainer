@@ -35,7 +35,7 @@ export default function SigninPage() {
     } else {
       setEmail('');
       setPassword('');
-      setError(result.message);
+      // setError(result.message);
     }
   };
 
